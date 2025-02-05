@@ -36,7 +36,7 @@ function Home() {
     <div className={styles.popoverContent}>{likedMoviesPopover}</div>
   );
   useEffect(() => {
-    fetch("https://my-moviz5-deploy-backend.vercel.app/movies")
+    fetch("https://my-moviz-backend-hazel.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
         setMoviesEffect(data.movies);
